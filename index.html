@@ -522,10 +522,13 @@
       const P360_SHOW_SCENE_TITLE = true;
       const P360_START_FULLY_ZOOMED_OUT = true;
       const P360_MAX_HFOV = 120;
-      const P360_FIRST_SCENE = "mount-whitney";
+      const P360_FIRST_SCENE = "Mount-Whitney";
 
       const P360_SCENES = {
-        "mount-whitney": {
+
+
+
+        "Mount-Whitney": {
           title: "Mount Whitney",
           description: "A 360-degree view from the peak of Mount Whitney. Notice the peak is relatively flat. ",
           panorama: "images/Mount-Whitney.jpg",
@@ -558,8 +561,8 @@
               id: "Wind-sounds",
               type: "annotation",
               label: "Sounds near the peak",
-              pitch: -17,
-              yaw: 94,
+              pitch: 2,
+              yaw: -50,
               iconSize: 32,
               fallbackIcon: "♪",
               title: "Sounds near the peak",
@@ -575,31 +578,31 @@
   mediaTitle: "Wind Sounds"
             },
             {
-              id: "common-gallinule",
+              id: "space-holder-1",
               type: "annotation",
-              label: "Common Gallinule in the open water",
-              pitch: -10,
-              yaw: 34,
+              label: "text-holder-1",
+              pitch: 2,
+              yaw: -100,
               iconSize: 32,
               fallbackIcon: "i",
-              title: "Common Gallinule",
+              title: "space holder 1",
               description: `
-                <p>The Common Gallinule is a dark marsh bird with a red-and-yellow bill, long toes, and a white stripe along its side. It often swims in open channels near dense vegetation.</p>
-                <p>Unlike a duck, it frequently bobs its head as it moves across the water.</p>
+                <p>text holder 1.</p>
+                <p>text holder 1 description.</p>
               `
             },
             {
-              id: "red-winged-blackbird",
+              id: "space-holder-2",
               type: "annotation",
-              label: "Red-winged Blackbird perched on a reed",
-              pitch: 2,
+              label: "space-holder-2",
+              pitch: 5,
               yaw: -70,
               iconSize: 32,
               fallbackIcon: "+",
-              title: "Red-winged Blackbird",
+              title: "space holder 2",
               description: `
-                <p>Male Red-winged Blackbirds defend marsh territories from exposed perches. Their red shoulder patches are especially visible when they sing or confront another bird.</p>
-                <p>The slideshow shows the bird singing, perched, and attacking a much larger Great Egret.</p>
+                <p>Male text holder 2.</p>
+                <p>text holder 2 description.</p>
               `,
               mediaType: "slideshow",
               slides: [
@@ -624,30 +627,30 @@
               ]
             },
             {
-              id: "black-tern",
+              id: "thin-air",
               type: "annotation",
-              label: "Black Tern flying over the marsh",
+              label: "thin-air",
               pitch: 17,
               yaw: -106,
               iconSize: 32,
               fallbackIcon: "+",
-              title: "Black Tern",
-              description: `
-                <p>Black Terns fly lightly over shallow wetlands, picking insects from the air and small prey from the water surface. Their breeding plumage is dark gray to black with pale wings.</p>
-                <p><a href="https://commons.wikimedia.org/wiki/File:Chlidonias_niger_map.svg" target="_blank" rel="noopener">Range map by Cephas</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+              title: "thin air",
+              description: `The altitude of Mount Whitney is 14,505 feet (4,421 meters). The air is thin at this altitude, which means that there is less oxygen available for breathing. This can lead to altitude sickness, which can cause symptoms such as headaches, nausea, and fatigue. It is important to acclimate to the altitude gradually and to stay hydrated while hiking at high elevations.
+                <p>text holder 3.</p>
+                <p><a href="https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" target="_blank" rel="noopener">aerial photo of world by Richard Gatley</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
               `,
               mediaType: "image",
-              mediaSrc: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chlidonias_niger_map.svg",
-              mediaAlt: "Range map for the Black Tern"
+              mediaSrc: "https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+              mediaAlt: "Picture of atmosphere from above earth's surface"
             },
             {
-              id: "go-to-hawk-mountain",
+              id: "go-to-mars",
               type: "teleport",
-              label: "Travel to Hawk Mountain",
-              description: "Move from the marsh boardwalk to the Hawk Mountain overlook.",
+              label: "travel to Mars",
+              description: "Move from the peak of mount whitney to the surface of Mars.",
               pitch: -8,
               yaw: -145,
-              targetScene: "hawk-mountain",
+              targetScene: "Mars",
               targetYaw: 0,
               targetPitch: 0,
               targetHfov: 120,
@@ -697,6 +700,21 @@
 
              
             
+            },
+
+            {
+              id: "test-hotspot",
+              type: "annotation",
+              label: "test-hotspot",
+              pitch: -3,
+              yaw: -100,
+              iconSize: 32,
+              fallbackIcon: "+",
+              title: "test hotspot",
+              description: `
+                <p>Just like the peak of Mount Whitney, Mars' surface is relatively flat. even the largest mountain in the solar system, which is on mars, has barely a 4 degree incline.</p>
+                <p>For people like me who dislike walking uphill strongly, this hike is perfect!</p>
+              `
             },
             {
               id: "mars-mountains",
